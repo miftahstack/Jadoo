@@ -1,0 +1,68 @@
+import React from 'react'
+import Container from '../Container'
+import Flex from '../Flex'
+
+// Img
+import social from '../../assets/Social.svg'
+import socialTwo from '../../assets/Social-2.svg'
+import socialThree from '../../assets/Social-3.svg'
+import playStore from '../../assets/Play Store.svg'
+import appStore from '../../assets/Google Play.svg'
+
+// Img
+
+const Footer = () => {
+   return (
+      <>
+         <Container className={`mt-[300px]`}>
+            <Flex className={`justify-between`}>
+               <div className="">
+                  <h3 className='text-[#181E4B] text-[44px]'>Jadoo.</h3>
+                  <p className='text-[#5E6282]'>Book your trip in minute, get full
+                     Control for much longer.
+                  </p>
+               </div>
+               <div className="">
+                  <ul>
+                     <li className='text-[21px] font-bold'>Company</li>
+                     <li className='text-[#5E6282]'>About</li>
+                     <li className='text-[#5E6282]'>Careers</li>
+                     <li className='text-[#5E6282]'>Mobile</li>
+                  </ul>
+               </div>
+               <div className="">
+                  <ul>
+                     <li className='text-[21px] font-bold'>Contact</li>
+                     <li className='text-[#5E6282]'>Help/FAQ</li>
+                     <li className='text-[#5E6282]'>Press</li>
+                     <li className='text-[#5E6282]'>Affiliate</li>
+                  </ul>
+               </div>
+               <div className="">
+                  <ul>
+                     <li className='text-[21px] font-bold'>More</li>
+                     <li className='text-[#5E6282]'>Airlinefees</li>
+                     <li className='text-[#5E6282]'>Airline</li>
+                     <li className='text-[#5E6282]'>Low fair tips</li>
+                  </ul>
+               </div>
+               <div className="">
+                  <div className="flex pb-3">
+                     <img src={social} alt="" />
+                     <img src={socialTwo} alt="" />
+                     <img src={socialThree} alt="" />
+                  </div>
+                  <span className='text-[#404040] '>Discover Our App</span>
+                  <div className="flex gap-x-3 mt-3">
+                     <img src={appStore} alt="" />
+                     <img src={playStore} alt="" />
+                  </div>
+               </div>
+            </Flex>
+            <span className='text-center'>All rights reserved@jadoo.co</span>
+         </Container>
+      </>
+   )
+}
+
+export default Footer
