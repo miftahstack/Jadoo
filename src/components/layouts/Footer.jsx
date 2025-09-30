@@ -15,15 +15,15 @@ const Footer = () => {
    return (
       <>
          <Container className={`mt-[300px]`}>
-            <Flex className={`justify-between`}>
+            <Flex className={`justify-between items-start py-20`}>
                <div className="">
                   <h3 className='text-[#181E4B] text-[44px]'>Jadoo.</h3>
-                  <p className='text-[#5E6282]'>Book your trip in minute, get full
+                  <p className='text-[#5E6282] w-[300px]'>Book your trip in minute, get full
                      Control for much longer.
                   </p>
                </div>
                <div className="">
-                  <ul>
+                  <ul className='space-y-2.5'>
                      <li className='text-[21px] font-bold'>Company</li>
                      <li className='text-[#5E6282]'>About</li>
                      <li className='text-[#5E6282]'>Careers</li>
@@ -31,7 +31,7 @@ const Footer = () => {
                   </ul>
                </div>
                <div className="">
-                  <ul>
+                  <ul className='space-y-2.5'>
                      <li className='text-[21px] font-bold'>Contact</li>
                      <li className='text-[#5E6282]'>Help/FAQ</li>
                      <li className='text-[#5E6282]'>Press</li>
@@ -39,7 +39,7 @@ const Footer = () => {
                   </ul>
                </div>
                <div className="">
-                  <ul>
+                  <ul className='space-y-2.5'>
                      <li className='text-[21px] font-bold'>More</li>
                      <li className='text-[#5E6282]'>Airlinefees</li>
                      <li className='text-[#5E6282]'>Airline</li>
@@ -59,7 +59,7 @@ const Footer = () => {
                   </div>
                </div>
             </Flex>
-            <span className='text-center'>All rights reserved@jadoo.co</span>
+            <h4 className='text-center pb-10 text-[#404040]'>All rights reserved@jadoo.co</h4>
          </Container>
       </>
    )

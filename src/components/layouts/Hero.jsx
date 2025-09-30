@@ -32,7 +32,6 @@ const Hero = () => {
                            <li>En</li>
                         </ul>
                      </div>
-                     {/* <div className="">@</div> */}
                   </Flex>
                </Container>
 
