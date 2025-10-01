@@ -13,8 +13,8 @@ import appStore from '../../assets/Google Play.svg'
 
 const Footer = () => {
    return (
-      <>
-         <Container className={`mt-[300px]`}>
+      <section>
+         <Container className={`mt-25`}>
             <Flex className={`justify-between items-start py-20`}>
                <div className="">
                   <h3 className='text-[#181E4B] text-[44px]'>Jadoo.</h3>
@@ -61,7 +61,7 @@ const Footer = () => {
             </Flex>
             <h4 className='text-center pb-10 text-[#404040]'>All rights reserved@jadoo.co</h4>
          </Container>
-      </>
+      </section>
    )
 }
 

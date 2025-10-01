@@ -14,8 +14,8 @@ import travel from '../../assets/travel.png'
 
 const Hero = () => {
    return (
-         <section className='pb-20'>
-            <div className="bg-[url(/src/assets/decore.png)] bg-contain bg-right bg-no-repeat pt-1 h-[600px]">
+         <section className='mb-50'>
+            <div className=" bg-[url(/src/assets/decore.png)] bg-contain bg-right bg-no-repeat pt-1 h-[600px]">
                <Container>
                   <Flex className={`justify-between mt-13.5`}>
                      <div className="">
@@ -36,16 +36,16 @@ const Hero = () => {
                </Container>
 
                <Container className={`py-7.5`}>
-                  <Flex>
+                  <Flex className={`justify-between`}>
                      <div className="">
                         <h2 className='text-[16px] text-[#DF6951] font-bold'>Best Destinations around the world</h2>
                         <h1 className='text-[80px] w-[500px] -tracking-[2px] font-bold font-Volkhov'>Travel, enjoy
                            and live a new
                            and full life</h1>
-                        <p>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+                        <p className='w-[500px]'>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
                      </div>
                      <div className="">
-                        <img className='w-[900px] ' src={travel} alt="travel.png" />
+                        <img className='w-[700px]' src={travel} alt="travel.png" />
                      </div>
                   </Flex>
                   <Flex className={`gap-x-5`}>
