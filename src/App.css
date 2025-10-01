@@ -1,5 +1,6 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,700;1,400&display=swap');
 
-@theme{
+@theme {
    --font-Volkhov: "Volkhov", serif;
 }
