@@ -49,10 +49,10 @@ const Hero = () => {
                      </div>
                   </Flex>
                   <Flex className={`gap-x-5`}>
-                     <button className=' rounded-[5px] bg-amber-400  text-white px-4 py-2'>Find Out More</button>
+                     <button className=' rounded-[10px] bg-amber-400 drop-shadow-[#F1A501] cursor-pointer drop-shadow-sm text-white px-8 py-4'>Find Out More</button>
                      <div className="flex items-center gap-x-4">
-                        <button className='bg-[#DF6951] text-white w-10 h-10 flex items-center justify-center rounded-full'>
-                           <IoIosPlay />
+                        <button className='bg-[#DF6951] drop-shadow-[#DF6951] drop-shadow-2xl  text-white w-13.5 h-13.5 flex items-center justify-center rounded-full'>
+                           <IoIosPlay className='text-[25px]'/>
                         </button>
                         <span className='text-[#404040]'>Play Demo</span>
                      </div>

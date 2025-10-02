@@ -5,6 +5,7 @@ import Destinations from '../layouts/Destinations'
 import Service from '../layouts/Service'
 import Logo from '../layouts/Logo'
 import Steps from '../layouts/Steps'
+import Subscribe from '../layouts/Subscribe'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Steps/>
       <Destinations/>
       <Logo/>
+      <Subscribe/>
       <Footer />
     </>
   )

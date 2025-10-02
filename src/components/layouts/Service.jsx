@@ -66,9 +66,6 @@ const Service = () => {
                   </div>
                   <div className="rounded-t-4xl bg-[#DF6951] w-[80px] h-[80px] absolute bottom-0 left-0 translate-y-[40%] -translate-x-[40%] -z-10 opacity-0 group-hover:opacity-100 transition-all duration-200"></div>
                </div>
-
-
-
             </Flex>
          </Container>
       </section>
