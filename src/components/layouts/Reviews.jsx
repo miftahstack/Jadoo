@@ -1,5 +1,8 @@
 import React from 'react'
 import Container from '../Container'
+// Img
+import reviewOne from '../../assets'
+// Img
 
 const Reviews = () => {
    return (
@@ -11,7 +14,12 @@ const Reviews = () => {
             </div>
 
             <div className="">
-               
+               <div className="">
+                  <img src={reviewOne} alt="" />
+               </div>
+               <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+               <h5>Mike taylor</h5>
+               <p>Lahore, Pakistan</p>
             </div>
 
          </Container>
