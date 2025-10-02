@@ -7,7 +7,7 @@ import { CiHeart } from "react-icons/ci";
 // Img
 import stepOne from '../../assets/stepOne.svg'
 import stepTwo from '../../assets/stepTwo.svg'
-import stepThree from '../../assets/stepThree.svg'
+import stepThree from '../../assets/stepthree.svg'
 
 import stepImg from '../../assets/Rectangle 17.jpg'
 import stepMask from '../../assets/Mask Group.png'
