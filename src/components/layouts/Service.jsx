@@ -12,15 +12,15 @@ import serviceFour from '../../assets/serviceFour.svg'
 // Aos
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS CSS
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 // Aos
 
 const Service = () => {
    useEffect(() => {
        AOS.init({
-         duration: 1000, // Animation duration
-         once: true, // Whether animation should only happen once
-         disable: "mobile", // Disable animations on mobile devices
+         duration: 1000, 
+         once: true, 
+         disable: "mobile", 
        });
      }, []);
    return (

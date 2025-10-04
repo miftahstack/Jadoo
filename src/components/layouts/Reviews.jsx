@@ -3,6 +3,12 @@ import Container from "../Container";
 
 import { FaChevronUp } from "react-icons/fa";
 
+// Aos
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
+import  { useEffect } from 'react'
+// Ao
+
 // Img
 import reviewOne from "../../assets/reviewOne.png";
 import Flex from "../Flex";
@@ -13,6 +19,14 @@ const Reviews = () => {
   const handleUp = () => {
     console.log("Clicked");
   };
+
+   useEffect(() => {
+         AOS.init({
+           duration: 1000, 
+           once: true, 
+           disable: "mobile", 
+         });
+       }, []);
 
   return (
     <section className="md:py-50 py-25">
@@ -29,10 +43,8 @@ const Reviews = () => {
             </h3>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-y-6 md:gap-x-5 relative">
-
+          <div data-aos="fade-down"  className="flex flex-col md:flex-row items-center gap-y-6 md:gap-x-5 relative">
             <div className="relative flex flex-col md:block items-center md:items-start">
-
               <div className="absolute md:static -top-10 md:-top-12 md:-left-10">
                 <img
                   className="w-16 h-16 md:w-20 md:h-20 bg-cover rounded-full shadow-md"
