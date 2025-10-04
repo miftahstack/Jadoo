@@ -24,7 +24,7 @@ const Hero = () => {
     <section className="md:mb-50">
       <div className=" bg-[url(/src/assets/decore.png)] bg-contain bg-top-right bg-no-repeat pt-1 md:h-[600px] ">
         {/* Only For Mobile */}
-        <Container className={`md:hidden pb-6.5`}>
+        <Container className={`md:hidden pb-6.5 `}>
           <Flex className={`justify-between p-5`}>
             <div className="">
               <img src={logo} alt="logo.png" />
@@ -43,7 +43,7 @@ const Hero = () => {
 
             {bar && (
               <>
-                <ul className="space-y-7.5 text-[18px] text-center bg-primaryy  text-white absolute p-5 top-20 left-0 w-full">
+                <ul className="space-y-7.5 z-40 text-[18px] text-center bg-primaryy  text-white absolute p-5 pb-7 top-20 left-0 w-full">
                   <li className="">Desitnations</li>
                   <li className="">Hotels</li>
                   <li className="">Flights</li>
