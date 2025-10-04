@@ -27,8 +27,6 @@ const Reviews = () => {
                   <h3 className='text-[50px] font-bold font-Volkhov capitalize w-[450px] text-[#14183E]'>What people say about Us.</h3>
                </div>
 
-
-               {/* <div className="overflow-x-auto px-10 py-15] flex gap-x-5 mr-10 rounded-2xl"> */}
                <div className="flex items-center gap-x-5">
                   <div className="relative">
                      <div className="absolute -top-12 -left-10">
@@ -47,14 +45,7 @@ const Reviews = () => {
                      <FaChevronDown />
                   </div>
                </div>
-
-
-               {/* </div> */}
-
-
-
             </Flex>
-
          </Container>
       </section >
    )

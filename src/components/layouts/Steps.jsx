@@ -108,7 +108,6 @@ const Steps = () => {
               <CiHeart className="text-[26px] md:text-[30px]" />
             </div>
 
-            {/* Floating mini-card */}
             <div className="md:absolute md:-right-80 md:bottom-15 mt-6 md:mt-0 p-4 md:p-5 bg-white rounded-3xl shadow-md">
               <div className="flex gap-x-4 md:gap-x-5 items-center">
                 <img className="w-[50px] md:w-full" src={stepMask} alt="" />
