@@ -39,7 +39,7 @@ const Hero = () => {
         <Container className={`md:hidden pb-6.5`}>
           <Flex className={`justify-between p-5`}>
             <div>
-              <img className="w-[700px]" src={travel} alt="travel.png" />
+              <img src={logo} alt="travel.png" />
             </div>
 
             <div onClick={handleBar} className="cursor-pointer z-50">
