@@ -15,7 +15,7 @@ const Footer = () => {
    return (
       <section>
          <Container className={``}>
-            <Flex className={`md:justify-between text-center md:flex-row space-y-5 justify-center flex-col md:items-start md:py-20`}>
+            <Flex className={`md:justify-between md:text-left text-center md:flex-row space-y-5 justify-center flex-col md:items-start md:py-20`}>
                <div className="">
                   <h3 className='text-[#181E4B] text-[44px]'>Jadoo.</h3>
                   <p className='text-[#5E6282] w-[300px]'>Book your trip in minute, get full
@@ -46,7 +46,7 @@ const Footer = () => {
                      <li className='text-[#5E6282]'>Low fair tips</li>
                   </ul>
                </div>
-               <div className="">
+               <div className="text-center">
                   <div className="flex justify-center pb-3">
                      <img src={social} alt="" />
                      <img src={socialTwo} alt="" />
