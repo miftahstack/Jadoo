@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-:root {
+@theme{
    --font-Volkhov: "Volkhov", serif;
+   --color-primaryy: #F1A706;
+   --color-textColor: #5E6282;
 }
