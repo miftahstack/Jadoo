@@ -15,9 +15,9 @@ const Service = () => {
          <Container>
             <div className="text-center mb-17.5">
                <h4 className='text-[16px] font-semibold text-[#5E6282]'>Services</h4>
-               <h3 className='text-[50px] font-bold font-Volkhov'>We Offer Best Services</h3>
+               <h3 className='md:text-[50px] text-[32px] font-bold font-Volkhov'>We Offer Best Services</h3>
             </div>
-            <Flex className={`justify-between`}>
+            <Flex className={`md:justify-between justify-items-center grid  md:grid-cols-2 lg:grid-cols-4 grid-cols-1 `}>
                <div className="relative group cursor-pointer">
                   <div className="w-[250px] h-[290px] p-5 flex flex-col justify-center items-center  hover:shadow-lg rounded-4xl z-10 bg-white">
                      <div className="">

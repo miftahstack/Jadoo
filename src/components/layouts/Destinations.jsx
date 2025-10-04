@@ -12,13 +12,13 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 const Destinations = () => {
    return (
-      <section className='py-25'>
+      <section className='pb-50'>
          <Container>
             <div className="text-center mb-17.5">
                <h4 className='text-[16px] font-semibold text-[#5E6282]'>Top Selling</h4>
-               <h3 className='text-[50px] font-bold font-Volkhov'>Top Destinations</h3>
+               <h3 className='md:text-[50px] text-[32px] font-bold font-Volkhov'>Top Destinations</h3>
             </div>
-            <Flex className={`justify-evenly`}>
+            <Flex className={`md:justify-evenly justify-items-center md:space-y-0 space-y-60 md:flex-row flex-col `}>
                <div className=" w-[335px] h-[350px] shadow-lg">
                   <div className="">
                      <img className='rounded-t-2xl w-[335px] h-[400px]' src={destinationThree} alt="place01.png" />

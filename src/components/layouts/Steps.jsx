@@ -21,18 +21,18 @@ import stepIconFour from '../../assets/send.svg'
 
 const Steps = () => {
    return (
-      <section>
+      <section className='py-25 '>
          <Container>
-            <Flex className={` justify-between overflow-hidden`}>
+            <Flex className={`flex-col md:flex-row md:justify-between md:overflow-hidden`}>
                <div className=" ">
-                  <div className="mb-17.5">
+                  <div className="mb-17.5 md:text-left text-center">
                      <h4 className='text-[16px] font-semibold text-[#5E6282]'>Easy and Fast</h4>
-                     <h3 className='text-[50px] font-bold font-Volkhov capitalize w-[450px] text-[#14183E]'>Book your next trip in 3 easy steps</h3>
+                     <h3 className='md:text-[50px] text-[32px] font-bold font-Volkhov capitalize w-[450px] text-[#14183E]'>Book your next trip in 3 easy steps</h3>
                   </div>
 
-                  <div className="space-y-12">
-                     <div className="flex gap-x-5 items-center">
-                        <div className="">
+                  <div className="space-y-7.5 flex flex-col md:text-left text-center">
+                     <div className=" flex flex-col md:flex-row  gap-x-5 items-center">
+                        <div className="md:mb-0 mb-3">
                            <img src={stepOne} alt="" />
                         </div>
                         <div className="">
@@ -41,8 +41,8 @@ const Steps = () => {
                               adipiscing elit. Urna, tortor tempus. </p>
                         </div>
                      </div>
-                     <div className="flex gap-x-5 items-center">
-                        <div className="">
+                     <div className="flex flex-col md:flex-row  gap-x-5 items-center">
+                        <div className="md:mb-0 mb-3">
                            <img src={stepTwo} alt="" />
                         </div>
                         <div className="">
@@ -51,8 +51,8 @@ const Steps = () => {
                               adipiscing elit. Urna, tortor tempus. </p>
                         </div>
                      </div>
-                     <div className="flex gap-x-5 items-center">
-                        <div className="">
+                     <div className="flex flex-col md:flex-row  gap-x-5 items-center">
+                        <div className="md:mb-0 mb-3">
                            <img src={stepThree} alt="" />
                         </div>
                         <div className="">
@@ -63,8 +63,7 @@ const Steps = () => {
                      </div>
                   </div>
                </div>
-
-               <div className="relative  right-1/7 rounded-4xl shadow-2xl p-5 py-5 ">
+               <div className="relative right-1/7 rounded-4xl shadow-2xl p-5 py-5 ">
                   
                   <div className="pb-5">
                      <img src={stepImg} alt="" />
