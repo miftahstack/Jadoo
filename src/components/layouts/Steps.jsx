@@ -16,10 +16,24 @@ import stepIconOne from "../../assets/LEAF.svg";
 import stepIconTwo from "../../assets/map icon.svg";
 import stepIconThree from "../../assets/send.svg";
 import stepIconFour from "../../assets/send.svg";
-
 // Img
 
+
+// Aos
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
+import React, { useEffect } from 'react'
+// Aos
+
 const Steps = () => {
+ useEffect(() => {
+       AOS.init({
+         duration: 1000, // Animation duration
+         once: true, // Whether animation should only happen once
+         disable: "mobile", // Disable animations on mobile devices
+       });
+     }, []);
+
   return (
     <section className="py-25 ">
       <Container>
@@ -80,7 +94,7 @@ const Steps = () => {
             </div>
           </div>
 
-          <div className="md:relative mt-8 md:mt-0 md:right-1/7 rounded-4xl shadow-2xl md:p-5 p-4">
+          <div data-aos="fade-up"  className="md:relative mt-8 md:mt-0 md:right-1/7 rounded-4xl shadow-2xl md:p-5 p-4">
             <div className="pb-4 md:pb-5 flex flex-col items-center">
               <img className="w-full px-3 md:px-0" src={stepImg} alt="" />
             </div>

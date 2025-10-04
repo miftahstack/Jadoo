@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Container from "../Container";
 import Flex from "../Flex";
 
 // React Icons
-// import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoIosPlay } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import { FaBars } from "react-icons/fa6";
@@ -14,20 +13,33 @@ import logo from "../../assets/Logo.svg";
 import travel from "../../assets/travel.png";
 // Img
 
+// Aos
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
+// Aos
+
 const Hero = () => {
   const [bar, setBar] = useState(false);
   const handleBar = () => {
     setBar(!bar);
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Whether animation should only happen once
+      disable: "mobile", // Disable animations on mobile devices
+    });
+  }, []);
+
   return (
     <section className="md:mb-50">
       <div className=" bg-[url(/src/assets/decore.png)] bg-contain bg-top-right bg-no-repeat pt-1 md:h-[600px] ">
         {/* Only For Mobile */}
-        <Container className={`md:hidden pb-6.5 `}>
+        <Container className={`md:hidden pb-6.5`}>
           <Flex className={`justify-between p-5`}>
-            <div className="">
-              <img src={logo} alt="logo.png" />
+            <div>
+              <img className="w-[700px]" src={travel} alt="travel.png" />
             </div>
 
             <div onClick={handleBar} className="cursor-pointer z-50">
@@ -58,7 +70,7 @@ const Hero = () => {
         </Container>
         {/* Only For Mobile */}
         <Container>
-          <Flex className={`hidden md:flex justify-between mt-13.5`}>
+          <Flex className={`hidden md:flex justify-between mt-7.5`}>
             <div className="">
               <img src={logo} alt="logo.png" />
             </div>
@@ -81,22 +93,22 @@ const Hero = () => {
             className={`md:justify-between flex-col text-center md:flex-row`}
           >
             <div className=" md:text-left mb-17.5">
-              <h2 className="md:text-[16px] text-[14px] text-[#DF6951] font-bold uppercase">
+              <h2  className="md:text-[16px] text-[14px] text-[#DF6951] font-bold uppercase">
                 Best Destinations around the world
               </h2>
-              <h1 className="md:text-[80px] text-[42px] leading-12 md:leading-22.5 py-5 px-15 md:px-0 md:w-[550px] md:-tracking-[2px] font-bold font-Volkhov">
+              <h1  data-aos="fade-up"  data-aos-delay="200" className="text-[#181E4B] md:text-[80px] text-[42px] leading-12 md:leading-22.5 py-5 px-15 md:px-0 md:w-[550px] md:-tracking-[2px] font-bold font-Volkhov">
                 Travel, enjoy and live a new and full life
               </h1>
-              <p className="md:w-[430px] px-7.5 md:px-0 text-[#5E6282]">
+              <p   data-aos="fade-up"   data-aos-delay="100" className="md:w-[430px] px-7.5 md:px-0 text-[#5E6282]">
                 Built Wicket longer admire do barton vanity itself do in it.
                 Preferred to sportsmen it engrossed listening. Park gate sell
                 they west hard for the.
               </p>
-              <div className="flex items-center gap-x-7.5 justify-center md:justify-start mt-10">
+              <div  data-aos="fade-up" data-aos-delay="100" className="flex items-center gap-x-7.5 justify-center md:justify-start mt-10">
                 <button className=" rounded-[10px] bg-amber-400 drop-shadow-[#F1A501] cursor-pointer drop-shadow-sm text-white px-8 py-4">
                   Find Out More
                 </button>
-                <div className="flex items-center gap-x-4">
+                <div  className="flex items-center gap-x-4">
                   <button className="bg-[#DF6951] drop-shadow-[#DF6951] drop-shadow-2xl  text-white w-13.5 h-13.5 flex items-center justify-center rounded-full">
                     <IoIosPlay className="text-[25px]" />
                   </button>
@@ -104,7 +116,11 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="">
+            <div
+              data-aos="fade-left"
+              data-aos-delay="200"
+              className=""
+            >
               <img className="w-[700px]" src={travel} alt="travel.png" />
             </div>
           </Flex>

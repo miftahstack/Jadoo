@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Container from '../Container'
 import Flex from '../Flex'
 
@@ -9,13 +9,26 @@ import serviceThree from '../../assets/serviceThree.svg'
 import serviceFour from '../../assets/serviceFour.svg'
 // Img
 
+// Aos
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
+import React, { useEffect } from 'react'
+// Aos
+
 const Service = () => {
+   useEffect(() => {
+       AOS.init({
+         duration: 1000, // Animation duration
+         once: true, // Whether animation should only happen once
+         disable: "mobile", // Disable animations on mobile devices
+       });
+     }, []);
    return (
       <section className='py-25'>
          <Container>
-            <div className="text-center mb-17.5">
+            <div data-aos="fade-up" className="text-center mb-17.5">
                <h4 className='text-[16px] font-semibold text-[#5E6282]'>Services</h4>
-               <h3 className='md:text-[50px] text-[32px] font-bold font-Volkhov'>We Offer Best Services</h3>
+               <h3  className=' md:text-[50px] text-[32px] font-bold font-Volkhov'>We Offer Best Services</h3>
             </div>
             <Flex className={`md:justify-between justify-items-center grid space-y-7.5 md:grid-cols-2 lg:grid-cols-4 grid-cols-1 `}>
                <div className="relative group cursor-pointer">
