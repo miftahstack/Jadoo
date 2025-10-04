@@ -1,5 +1,6 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
-/* :root {
+:root {
    --font-Volkhov: "Volkhov", serif;
-} */
+}
