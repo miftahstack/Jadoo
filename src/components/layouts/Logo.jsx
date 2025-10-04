@@ -12,7 +12,7 @@ const Logo = () => {
    return (
       <section className='py-25'>
          <Container>
-            <Flex className={`justify-between`}>
+            <Flex className={`md:justify-between md:flex-row flex-col  space-y-5`}>
                <div className="hover:shadow-lg h-[80px] w-[160px] grayscale hover:grayscale-0 duration-300 transition-all flex items-center justify-center rounded-2xl">
                   <img src={logoThree} alt="l" />
                </div>

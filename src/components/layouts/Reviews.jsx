@@ -15,7 +15,7 @@ const Reviews = () => {
   };
 
   return (
-    <section className="py-50">
+    <section className="md:py-50 py-25">
       <Container>
         <Flex
           className={`md:justify-between justify-items-center flex-col md:flex-row md:items-start gap-y-10`}

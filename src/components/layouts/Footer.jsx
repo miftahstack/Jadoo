@@ -14,8 +14,8 @@ import appStore from '../../assets/Google Play.svg'
 const Footer = () => {
    return (
       <section>
-         <Container className={`mt-25`}>
-            <Flex className={`justify-between items-start py-20`}>
+         <Container className={``}>
+            <Flex className={`md:justify-between text-center md:flex-row space-y-5 justify-center flex-col md:items-start md:py-20`}>
                <div className="">
                   <h3 className='text-[#181E4B] text-[44px]'>Jadoo.</h3>
                   <p className='text-[#5E6282] w-[300px]'>Book your trip in minute, get full
@@ -47,7 +47,7 @@ const Footer = () => {
                   </ul>
                </div>
                <div className="">
-                  <div className="flex pb-3">
+                  <div className="flex justify-center pb-3">
                      <img src={social} alt="" />
                      <img src={socialTwo} alt="" />
                      <img src={socialThree} alt="" />
@@ -59,7 +59,7 @@ const Footer = () => {
                   </div>
                </div>
             </Flex>
-            <h4 className='text-center pb-10 text-[#404040]'>All rights reserved@jadoo.co</h4>
+            <h4 className='text-center pb-10 text-[#404040] mt-2'>All rights reserved@jadoo.co</h4>
          </Container>
       </section>
    )
