@@ -31,7 +31,7 @@ const Steps = () => {
               <h4 className="text-[16px] font-semibold text-[#5E6282]">
                 Easy and Fast
               </h4>
-              <h3 className="md:text-[50px] text-[32px] font-bold font-Volkhov capitalize w-[450px] text-[#14183E]">
+              <h3 className="md:text-[50px] text-[32px] px-5 md:px-0 font-bold font-Volkhov capitalize w-[450px] text-[#14183E]">
                 Book your next trip in 3 easy steps
               </h3>
             </div>
