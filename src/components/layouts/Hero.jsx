@@ -21,7 +21,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="mb-50">
+    <section className="md:mb-50">
       <div className=" bg-[url(/src/assets/decore.png)] bg-contain bg-top-right bg-no-repeat pt-1 md:h-[600px] ">
         {/* Only For Mobile */}
         <Container className={`md:hidden pb-6.5`}>
