@@ -72,10 +72,10 @@ const Hero = () => {
         <Container>
           <Flex className={`hidden md:flex justify-between mt-7.5`}>
             <div className="">
-              <img src={logo} alt="logo.png" />
+              <img className="scale-120" src={logo} alt="logo.png" />
             </div>
             <div className="">
-              <ul className="flex gap-x-13.5 items-center">
+              <ul className="flex gap-x-18 items-center">
                 <li>Desitnations</li>
                 <li>Hotels</li>
                 <li>Flights</li>
@@ -121,7 +121,7 @@ const Hero = () => {
               data-aos-delay="200"
               className=""
             >
-              <img className="w-[700px]" src={travel} alt="travel.png" />
+              <img className="w-[900px]" src={travel} alt="travel.png" />
             </div>
           </Flex>
           <Flex className={`gap-x-5`}></Flex>
