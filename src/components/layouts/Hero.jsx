@@ -96,7 +96,7 @@ const Hero = () => {
               <h2  className="md:text-[16px] text-[14px] text-[#DF6951] font-bold uppercase">
                 Best Destinations around the world
               </h2>
-              <h1  data-aos="fade-up"  data-aos-delay="200" className="text-[#181E4B] md:text-[80px] text-[42px] leading-12 md:leading-22.5 py-5 px-15 md:px-0 md:w-[550px] md:-tracking-[2px] font-bold font-Volkhov">
+              <h1  data-aos="fade-up"  data-aos-delay="200" className="text-[#181E4B] md:text-[84px] text-[42px] leading-12 md:leading-22.5 py-5 px-15 md:px-0 md:w-[600px] md:-tracking-[2px] font-bold font-Volkhov">
                 Travel, enjoy and live a new and full life
               </h1>
               <p   data-aos="fade-up"   data-aos-delay="100" className="md:w-[430px] px-7.5 md:px-0 text-[#5E6282]">
